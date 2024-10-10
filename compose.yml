@@ -2,13 +2,13 @@ version: '3'
 services:
   peerflix-docker:
     container_name: peerflix-docker
-    image: ghcr.io/cabaalexander/peerflix-docker:latest
+    image: ghcr.io/nicanordlc/peerflix-docker:latest
     build:
       context: .
       tags:
-        - "ghcr.io/cabaalexander/peerflix-docker:latest"
+        - "ghcr.io/nicanordlc/peerflix-docker:latest"
       labels:
-        org.opencontainers.image.source: https://github.com/cabaalexander/peerflix-docker
+        org.opencontainers.image.source: https://github.com/nicanordlc/peerflix-docker
     volumes:
       - ${SAVED:-./saved}:/app
     command: ${MAGNET:-}

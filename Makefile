@@ -5,5 +5,5 @@ main:
 
 .PHONY: deploy
 deploy:
-	@docker push ghcr.io/cabaalexander/peerflix-docker:latest
+	@docker push ghcr.io/nicanordlc/peerflix-docker:latest
 

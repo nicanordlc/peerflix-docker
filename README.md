@@ -18,7 +18,7 @@ environment variable `$SAVED`.
 Quick usage with auto removal container (--rm):
 
 ```bash
-docker run --rm -v ./saved:/app ghcr.io/cabaalexander/peerflix-docker:latest "<paste-magnet-link>"
+docker run --rm -v ./saved:/app ghcr.io/nicanordlc/peerflix-docker:latest "<paste-magnet-link>"
 ```
 
 ### Compose
