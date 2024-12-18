@@ -1,10 +1,11 @@
-version: '3'
 services:
   peerflix-docker:
-    container_name: peerflix-docker
     image: ghcr.io/nicanordlc/peerflix-docker:latest
     build:
       context: .
+      platforms:
+        - "linux/amd64"
+        - "linux/arm64"
       tags:
         - "ghcr.io/nicanordlc/peerflix-docker:latest"
       labels:
